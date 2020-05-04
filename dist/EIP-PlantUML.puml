@@ -470,7 +470,7 @@ Smv_
 
 skinparam defaultTextAlignment center
 
-!function HIDE_STEREOTYPES()
+!procedure HIDE_STEREOTYPES()
   Hide <<message>> stereotype
   Hide <<command message>>  stereotype
   Hide <<document message>>  stereotype
@@ -530,7 +530,7 @@ skinparam defaultTextAlignment center
   Hide <<smart proxy>> stereotype
   Hide <<test message>> stereotype
   Hide <<channel purger>>  stereotype
-!endfunction
+!endprocedure
 
 !define LAYOUT_LEFT_RIGHT() left to right direction
 
@@ -908,13 +908,13 @@ _alias -- _datasource
     Link: h‚ttps://www.enterpriseintegrationpatterns.com/patterns/messaging/ControlBus.html
 '/
 Hide <<control bus>> stereotype
-!function ControlBus($alias)
+!procedure ControlBus($alias)
   rectangle "<$control_bus>" as $alias <<control bus>> #transparent
   skinparam rectangle {
     BorderColor<<control bus>> transparent
     Shadowing<<control bus>> false
   }  
-!endfunction
+!endprocedure
 
 /'  EIP Pattern: Detour
     Link: https://www.enterpriseintegrationpatterns.com/patterns/messaging/Detour.html
